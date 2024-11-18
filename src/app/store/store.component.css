@@ -1,0 +1,87 @@
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.product-card {
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px; /* Increased card height */
+    width: 100%;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background-color: grey;
+}
+
+.product-image {
+    height: 300px; /* Increased image height */
+    width: 100%; /* Ensures consistent image width */
+    object-fit: cover; /* Ensures the image fits nicely */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    flex-grow: 1;
+    padding: 20px; /* Adjusted padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    font-size: 16px; /* Slightly larger font for better readability */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    margin: 15px 0;
+    font-size: 20px; /* Increased title font size */
+    font-weight: bold;
+    text-align: center;
+}
+
+.card .btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login-btn {
+    padding-right: 5px;
+    padding-left: 5px;
+    border-width: 0 5% 0 5%;
+    box-sizing: content-box;
+}
+
+.btn-primary, .btn-success {
+    font-size: 16px; /* Slightly larger button text */
+    padding: 12px;
+}
+
+/* Custom layout for two cards per row */
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased spacing between cards */
+    justify-content: center;
+}
+
+.custom-row .card-container {
+    flex: 0 0 48%; /* Two cards per row */
+    max-width: 48%;
+}
+
+
